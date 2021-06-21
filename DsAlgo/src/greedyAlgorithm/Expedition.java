@@ -1,8 +1,9 @@
 package greedyAlgorithm;
+import java.util.*;
 
 public class Expedition 
 {
-	public class pair
+	static class pair
 	{
 		int dist;
 		int fuel;
@@ -38,12 +39,64 @@ public class Expedition
             fue[m] = fue[i];
             fue[i] = temp1;  
         }
+		
+		PriorityQueue<pair> maxheap = new PriorityQueue<pair>((a, b) -> b.fuel - a.fuel);
+		
 		for(int i=0;i<dis.length;i++)
 		{
-			System.out.println(dis[i]+ " "+ fue[i]);
-
+			if(l>=town)
+			{
+				System.out.println(0);
+				break;
+			}
+			if(l >= dis[i])
+			{
+				pair p1 = new pair(dis[i],fue[i]);
+				maxheap.add(p1);
+			}
+			else
+			{
+				pair p2 = maxheap.poll();
+				l += p2.dist;
+				stops++;
+			}
+				
 		}
+
 		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		/*int i = 0;
+		while(l <= town)
+		{
+			while(i > dis.length && l >= dis[i] )
+			{
+				pair p1 = new pair(dis[i],fue[i]);
+				maxheap.add(p1);
+				i++;
+			}
+			pair p2 = maxheap.poll();
+			if(p2 != null)
+			{
+				l += p2.fuel;
+				stops++;
+			}
+		}*/
+		
+		System.out.println(stops);
 	}
 	
 
