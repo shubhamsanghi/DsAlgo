@@ -62,44 +62,10 @@ public class Expedition
 			}
 				
 		}
-
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		/*int i = 0;
-		while(l <= town)
-		{
-			while(i > dis.length && l >= dis[i] )
-			{
-				pair p1 = new pair(dis[i],fue[i]);
-				maxheap.add(p1);
-				i++;
-			}
-			pair p2 = maxheap.poll();
-			if(p2 != null)
-			{
-				l += p2.fuel;
-				stops++;
-			}
-		}*/
 		
 		System.out.println(stops);
 	}
 	
-
 	public static void main(String[] args) 
 	{
 		int dis[] = {4, 5, 11, 15};
