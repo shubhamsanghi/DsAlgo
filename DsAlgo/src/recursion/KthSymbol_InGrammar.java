@@ -1,6 +1,6 @@
 package recursion;
 
-public class KthSymbo_InGrammar 
+public class KthSymbol_InGrammar 
 {
 	static int func(int n, int k)
 	{

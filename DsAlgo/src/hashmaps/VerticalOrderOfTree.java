@@ -26,7 +26,7 @@ class Qobj
     }
 }
  
-public class VarticalOrderOfTree 
+public class VerticalOrderOfTree 
 {
  
    

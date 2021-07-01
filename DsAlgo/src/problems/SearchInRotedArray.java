@@ -1,6 +1,6 @@
 package problems;
 
-public class SeearchINRotedArray 
+public class SearchInRotedArray 
 {
 		static int search(int[] arr,int key,int l, int r)
 		{
