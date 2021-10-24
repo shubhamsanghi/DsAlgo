@@ -12,8 +12,8 @@ public class Factorial
 
 	public static void main(String[] args) 
 	{
-		int n = 7;
-		System.out.println(print(n));
+		for(int i=0;i<17;i++)
+			System.out.println(print(i));
 
 	}
 
